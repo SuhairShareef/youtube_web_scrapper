@@ -48,27 +48,27 @@ This FastAPI application utilizes the YouTube API to retrieve comments, likes, a
 
 The API returns a JSON response with the following structure:
 
-    ```json
-    {
-      "detail": "OK",
-      "data": {
-        "comments": [
-          {
-            "comment_id": "abc123",
-            "text": "Great video!",
-            "likes": 10,
-            "replies": 3
-          },
-          {
-            "comment_id": "def456",
-            "text": "Awesome content!",
-            "likes": 5,
-            "replies": 1
-          }
-        ]
+```json
+{
+  "detail": "OK",
+  "data": {
+    "comments": [
+      {
+        "comment_id": "abc123",
+        "text": "Great video!",
+        "likes": 10,
+        "replies": 3
+      },
+      {
+        "comment_id": "def456",
+        "text": "Awesome content!",
+        "likes": 5,
+        "replies": 1
       }
-    }
-    ```
+    ]
+  }
+}
+```
 
 * `detail`: A string indicating the status of the request.
 * `data`: The retrieved comments data.
