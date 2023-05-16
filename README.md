@@ -31,7 +31,7 @@ This FastAPI application utilizes the YouTube API to retrieve comments, likes, a
 
 1. Start the FastAPI server:
     ```shell
-    uvicorn main:app --reload
+    uvicorn server:app --reload
     ```
 
 2. Send a GET request to retrieve comments from a YouTube video:
