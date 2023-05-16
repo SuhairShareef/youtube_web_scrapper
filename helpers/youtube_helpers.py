@@ -36,7 +36,6 @@ def get_comments(youtube_video_id: int) -> dict:
 
     # iterate video response
     while video_response:
-        # extracting required info from each result object
         for item in video_response["items"]:
             # Extracting comments
             comment_data = transpose_comments(item=item)
