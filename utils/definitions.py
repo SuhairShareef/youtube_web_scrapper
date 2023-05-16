@@ -11,3 +11,5 @@ YOUTUBE_BASE_URL = "https://www.youtube.com/watch?v="
 CLIENT_SECRET_PATH = os.path.join(ROOT_DIR, "client_secret.json")
 YOUTUBE = "youtube"
 OK_RESP = {"code": 0, "msg": "Successful response"}
+
+COMMENTS_MOCK_FILE_PATH = os.path.join(ROOT_DIR, "tests", "comments_examples.json")
