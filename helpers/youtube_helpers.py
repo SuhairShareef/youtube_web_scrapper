@@ -14,8 +14,8 @@ def get_youtube():
 
 
 def get_comments(youtube_video_id: int) -> dict:
-    youtube_service_client = get_youtube()
     comments = []
+    youtube_service_client = get_youtube()
 
     # retrieve youtube video results
     try:
