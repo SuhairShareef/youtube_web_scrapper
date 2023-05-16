@@ -7,7 +7,6 @@ from settings import YOUTUBE_API_DEVELOPER_KEY
 
 
 def get_youtube():
-    comments = []
     youtube = googleapiclient.discovery.build(
         "youtube", "v3", developerKey=YOUTUBE_API_DEVELOPER_KEY
     )

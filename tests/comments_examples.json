@@ -1,0 +1,30 @@
+{
+  "etag": "tsTzpHP10Ie4kN9IjLB9VEqnlYk",
+  "id": "UgzOpYaC4oojL5mdg0V4AaABAg",
+  "kind": "youtube#commentThread",
+  "snippet": {
+    "canReply": true,
+    "isPublic": true,
+    "topLevelComment": {
+      "etag": "VWh_OUTN03cVTi9Rs2mEQ4UeXfE",
+      "id": "UgzOpYaC4oojL5mdg0V4AaABAg",
+      "kind": "youtube#comment",
+      "snippet": {
+        "authorChannelId": {},
+        "authorChannelUrl": "http://www.youtube.com/channel/UCXbxKlAk_QC7WWy84ZqEJqA",
+        "authorDisplayName": "steph gooch",
+        "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqMQPm4aLr8hVBFET5C_cfUz7iMdRK9qJmvaZxG7rR8NspLW92070xN16E17EHWu=s48-c-k-c0x00ffffff-no-rj",
+        "canRate": true,
+        "likeCount": 0,
+        "publishedAt": "2023-03-17T15:24:05Z",
+        "textDisplay": "Is there a way to use the API Key to run the query?\nI would like to run this from an AWS Lambda Function so a key would work best",
+        "textOriginal": "Is there a way to use the API Key to run the query?\nI would like to run this from an AWS Lambda Function so a key would work best",
+        "updatedAt": "2023-03-17T15:24:05Z",
+        "videoId": "rcE3iL0URhU",
+        "viewerRating": "none"
+      }
+    },
+    "totalReplyCount": 1,
+    "videoId": "rcE3iL0URhU"
+  }
+}

@@ -1,6 +1,4 @@
 from fastapi import APIRouter, HTTPException
-
-from googleapiclient.errors import HttpError
 from starlette import status
 
 import helpers
