@@ -13,7 +13,7 @@ youtube_router = APIRouter(
 
 @youtube_router.get(
     "/comments",
-    status_code=200 | 400,
+    status_code=200,
     tags=["YouTube"],
 )
 async def get_comments_from_video(youtube_video_id) -> dict:

@@ -40,10 +40,8 @@ def get_comments(youtube_video_id: int) -> dict:
         # extracting required info from each result object
         for item in video_response["items"]:
             # Extracting comments
-            comment = item["snippet"]["topLevelComment"]["snippet"]["textDisplay"]
-
-            # empty reply list
-            comments.append(comment)
+            comment_data = transpose_comments(item=item)
+            comments.append(comment_data)
 
         # Again repeat
         if "nextPageToken" in video_response:
@@ -63,4 +61,31 @@ def get_comments(youtube_video_id: int) -> dict:
 
     return {
         "comments": comments,
+    }
+
+
+def transpose_comments(item):
+    comment = (
+        item.get("snippet", None)
+        .get("topLevelComment", None)
+        .get("snippet", None)
+        .get("textDisplay")
+    )
+
+    comment_id = item.get("id")
+
+    replies_count = item.get("snippet", None).get("totalReplyCount")
+
+    like_count = (
+        item.get("snippet", None)
+        .get("topLevelComment", None)
+        .get("snippet", None)
+        .get("likeCount")
+    )
+
+    return {
+        "comment_id": comment_id,
+        "text": comment,
+        "likes": like_count,
+        "replies": replies_count,
     }
